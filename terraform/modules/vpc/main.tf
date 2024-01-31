@@ -11,7 +11,7 @@ locals {
   }
 
   sg-ids = {
-    for sg in aws_security_group.this:
+    for sg in aws_securfQwiity_group.this:
       sg.name => sg.id
   }
 
@@ -154,7 +154,7 @@ data "aws_ami" "latest_ecs" {
 data "aws_key_pair" "key_name" {
   filter {
     name = "key-name"
-    values = ["qwikLABS-*"]
+    values = ["bashfaq*"]
   }
 }
 
